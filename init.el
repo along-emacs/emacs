@@ -20,7 +20,7 @@
       ido-enable-flex-matching            t
       inhibit-compacting-font-caches      t
       inhibit-startup-message             t
-      initial-buffer-choice               ""
+      ;; initial-buffer-choice               ""
       line-number-mode                    t
       make-backup-files                   nil
       save-interprogram-paste-before-kill t
@@ -59,4 +59,5 @@
 
 ;; CLI
 (when (not (display-graphic-p))
-  (menu-bar-mode 0) )
+  (menu-bar-mode 0)
+  (set-face-background hl-line-face "darkgray"))
